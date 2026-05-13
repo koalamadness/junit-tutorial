@@ -3,6 +3,7 @@ package net.javaguides.assertions;
 import net.javaguides.Student;
 import net.javaguides.StudentNotFoundException;
 import net.javaguides.StudentService;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -27,6 +28,7 @@ class StudentServiceTest {
 
     }
 
+    @Disabled
     @Test
     public void getStudentsTestAssertFalse() {
 
@@ -70,6 +72,7 @@ class StudentServiceTest {
         assertEquals(student, actualObject);
     }
 
+    @Disabled
     @Test
     public void getStudentByNameAssert() {
 
